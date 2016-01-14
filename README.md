@@ -30,7 +30,7 @@ A [Laravel](http://laravel.com/) 5.1.x, [Bootstrap](http://getbootstrap.com) 3.5
 |404 Page for users|
 
 ### Quick Project Setup
-1. Run `git clone https://github.com/jeremykenedy/laravel-admin.git laravel-admin`
+1. Run `git clone https://github.com/gabrieljaime/laravel-admin.git laravel-admin`
 2. Create a MySQL database for the project
     * ```mysql -u root -p```, if using Vagrant: ```mysql -u homestead -psecret```
     * ```create database laravelAdmin;```
@@ -690,7 +690,7 @@ Note: Replace examples URI used in Vargrant/Homestead configuration file and use
 
 ## Enjoy
 
-###### ~ **Jeremy**
+###### ~ **Gabo**
 
 
 ## Additional information
