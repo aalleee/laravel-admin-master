@@ -67,3 +67,15 @@ Breadcrumbs::register('create_user_admin_view', function($breadcrumbs)
     $breadcrumbs->parent('edit_users');
     $breadcrumbs->push(Lang::get('sidebar-nav.link_title_user_create'), '/create-user', ['icon' => Lang::get('sidebar-nav.link_icon_user_create')]);
 });
+// DASHBOARD > EMPLOYEES
+Breadcrumbs::register('employees', function($breadcrumbs)
+{
+    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->push(Lang::get('sidebar-nav.link_title_profile_view'), '/employees/', ['icon' => Lang::get('sidebar-nav.link_icon_profile_view')]);
+});
+// DASHBOARD > EMPLOYEES > CREATE EMPLOYEES
+Breadcrumbs::register('create_employees', function($breadcrumbs)
+{
+    $breadcrumbs->parent('employees');
+    $breadcrumbs->push(Lang::get('sidebar-nav.link_title_user_create'), '/employees/create', ['icon' => Lang::get('sidebar-nav.link_icon_profile_view')]);
+});

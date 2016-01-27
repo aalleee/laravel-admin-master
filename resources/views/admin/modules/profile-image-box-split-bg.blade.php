@@ -17,7 +17,7 @@
                 <div class="col-sm-4 border-right">
                     <div class="description-block">
                         <h5 class="description-header">
-                            {!! HTML::twitter_followers($user, false, false, false, false, false, '','','friends_count') !!}
+                            {{--{!! HTML::twitter_followers($user, false, false, false, false, false, '','','friends_count') !!}--}}
                         </h5>
                         <span class="description-text">FOLLOWING</span>
                     </div>
@@ -25,7 +25,7 @@
                 <div class="col-sm-4 border-right">
                     <div class="description-block">
                         <h5 class="description-header">
-                            {!! HTML::twitter_followers($user, false, false, false, false, false) !!}
+                            {{--{!! HTML::twitter_followers($user, false, false, false, false, false) !!}--}}
                         </h5>
                         <span class="description-text">FOLLOWERS</span>
                     </div>
@@ -33,7 +33,7 @@
                 <div class="col-sm-4">
                     <div class="description-block">
                         <h5 class="description-header">
-                            {!! HTML::twitter_followers($user, false, false, false, false, false, '','','statuses_count') !!}
+                            {{--{!! HTML::twitter_followers($user, false, false, false, false, false, '','','statuses_count') !!}--}}
                         </h5>
                         <span class="description-text">TWEETS</span>
                     </div>

@@ -103,6 +103,15 @@ Route::group(['middleware' => 'auth'], function () {
 	    'uses' 		=> 'UserController@index'
 	]);
 
+	//Employees
+
+	Route::get('employees/data', 'EmployeesController@data');
+	Route::resource('employees', 'EmployeesController');
+
+	Route::get('employees/{id}/delete', [
+		'as' => 'employees.delete',
+		'uses' => 'EmployeesController@destroy',
+	]);
 	// USERS VIEWABLE PROFILE
 	Route::get('profile/{username}', [
 		'as' 		=> '{username}',

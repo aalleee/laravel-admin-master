@@ -78,7 +78,7 @@ return [
 	|
 	*/
 
-	'key' => env('APP_KEY', 'SomeRandomString'),
+	'key' => env('APP_KEY', 'iQ6IMsN6DPM2LTQ0duqgmjrYE2jZZDMJ'),
 
 	'cipher' => 'AES-256-CBC',
 
@@ -159,7 +159,9 @@ return [
         Intervention\Image\ImageServiceProvider::class,                 // http://image.intervention.io/getting_started/installation#laravel
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,             // http://laravel-breadcrumbs.davejamesmiller.com/en/latest/start.html
         Thujohn\Twitter\TwitterServiceProvider::class,					// https://github.com/thujohn/twitter - https://apps.twitter.com/\\
-
+        Laracasts\Flash\FlashServiceProvider::class,
+        Mitul\Generator\GeneratorServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,                           // Datatables
 	],
 
 	/*
@@ -260,6 +262,10 @@ return [
 
         // ADD TWITTER API - https://github.com/thujohn/twitter - https://apps.twitter.com/
         'Twitter' 		=> Thujohn\Twitter\Facades\Twitter::class,
+
+        'Flash'     => Laracasts\Flash\Flash::class,
+
+        'Datatables'      => Yajra\Datatables\Datatables::class, // DataTables
 
 
 	],

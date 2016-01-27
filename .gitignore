@@ -30,6 +30,7 @@ Thumbs.db
 /config/blog.php
 /sql
 composer.lock
+_ide_helper.php
 
 ### ASSET EXCLUSIONS ###
 /ref
